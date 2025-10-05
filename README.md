@@ -6,7 +6,7 @@ This project provides a **step-by-step visualization** of the **0/1 Knapsack Pro
 
 ## Project Structure
 
-The submission contains the following core files:
+Contains the following core files:
 
 ```
 .
@@ -22,7 +22,7 @@ The submission contains the following core files:
 
 ## Run Instructions
 
-This application is implemented entirely using **front-end web technologies** (HTML, CSS, JavaScript) and requires **no external libraries or server setup**.
+This is implemented entirely using **front-end web technologies** (HTML, CSS, JavaScript) and requires **no external libraries or server setup**.
 
 ### Using a Web Browser
 
