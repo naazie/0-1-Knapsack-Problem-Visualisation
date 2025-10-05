@@ -1,10 +1,10 @@
-# 🎒 0/1 Knapsack Problem Interactive Visualization (ISE Part 1)
+# 0/1 Knapsack Problem Interactive Visualization (ISE Part 1)
 
 This project provides a **step-by-step visualization** of the **0/1 Knapsack Problem** solved using **Dynamic Programming**.
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 The submission contains the following core files:
 
@@ -55,7 +55,7 @@ This application is implemented entirely using **front-end web technologies** (H
 
 ---
 
-### Execute Algorithm
+### Execution
 
 * **Step-by-Step:**
   Click **"Next"** to calculate one cell of the DP table at a time.
@@ -68,7 +68,7 @@ This application is implemented entirely using **front-end web technologies** (H
 
 ---
 
-## Key Variables Displayed
+## Key Variables
 
 | Variable / Element | Description                                                                                               |
 | ------------------ | --------------------------------------------------------------------------------------------------------- |
