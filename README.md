@@ -1,4 +1,4 @@
-# 0/1 Knapsack Problem Interactive Visualization (ISE Part 1)
+# 0/1 Knapsack Problem Interactive Visualization
 
 This project provides a **step-by-step visualization** of the **0/1 Knapsack Problem** solved using **Dynamic Programming**.
 
