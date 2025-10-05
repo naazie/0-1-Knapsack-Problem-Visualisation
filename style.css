@@ -1,0 +1,256 @@
+*
+{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box; 
+}
+
+#header
+{
+    background-color: #b0d2ec;
+    margin: 0 0 0 0;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #205177;
+}
+
+#inputs
+{
+    margin: 2%;
+    border: 4px solid #2051778f;
+    border-radius: 20px;
+    padding: 2%;
+}
+
+#capacity
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#capacity label
+{
+    font-size: larger;
+    font-weight: 600;
+    color: #513535;
+    margin: 1%;
+}
+
+#capacity input
+{
+    width: 10%;
+    height: 30px;
+    border: 2px solid #533a33b4;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.h
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #205177;
+}
+
+#items
+{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+#item-cont {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Updated styling for item inputs */
+.item-row 
+{
+    width: 10%;
+    padding: 1%;
+    border: 2.5px solid #533a33b4 ;
+    background-color: #7a595995;
+    border-radius: 25px;
+    margin: 1%;
+    
+    /* Make the item row a column container for internal centering */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center;
+    gap: 5px; /* Spacing between elements */
+}
+
+.it-label {
+    /* These labels now sit above their inputs */
+    font-size: 19px;
+    font-weight: 600;
+    color: #513535;
+    margin-top: 5px;
+}
+
+.it-ip {
+    /* Input fields are now wider for 3 digits and centered */
+    width: 50px; /* Increased width to show 3 digits comfortably */
+    padding: 5px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 1px solid #533a33b4;
+    border-radius: 7px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#btns, #nav-btns
+{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.b
+{
+    text-wrap: nowrap;
+    font-size: medium;
+    padding: .7%;
+    margin: 1%;
+    font-weight: 600;
+    color: #205177ee;
+    background-color: #b0d2ec;
+    border: 2px solid #205177a8;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.b:hover:not([disabled])
+{
+    background-color: #205177ee;
+    color: #b0d2ec;
+}
+
+.b:disabled {
+    background-color: #cccccc;
+    color: #666;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+#exec-cont {
+    margin: 2%;
+    border: 4px solid #2051778f;
+    border-radius: 20px;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#exec {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+#table {
+    width: 70%;
+    text-align: center;
+    background-color: #7a595995;
+    border-radius: 15px;
+    padding: 1%;
+    overflow-x: auto;
+}
+
+#current-step {
+    width: 28%;
+    text-align: center;
+    background-color: #7a595995;
+    border-radius: 15px;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#curr-step {
+    min-height: 80px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: left;
+    white-space: pre-wrap;
+}
+
+#steps {
+    width: 95%;
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: left;
+}
+
+/* --- Table Styling --- */
+#table-cont table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px auto;
+}
+
+#table-cont th, #table-cont td {
+    border: 1px solid #533a33b4;
+    padding: 8px 4px;
+    text-align: center;
+    font-size: 0.9em;
+    transition: background-color 0.4s ease;
+}
+
+#table-cont th {
+    background-color: #b0d2ec;
+    color: #205177;
+}
+
+/* Item info column */
+#table-cont td:first-child, #table-cont th:first-child {
+    background-color: #e0e0e0;
+    font-weight: bold;
+    min-width: 80px;
+}
+
+/* Highlighting classes */
+.highlight-current {
+    background-color: #d8c9c0 !important;
+    font-weight: bold;
+}
+
+.highlight-include {
+    background-color: #b0d2ec !important; 
+    font-weight: bold;
+}
+
+.highlight-exclude {
+    background-color: #648ec0 !important;
+    color: white;
+}
+
+.highlight-final {
+    background-color: #ffd700 !important;
+    font-weight: bold;
+}

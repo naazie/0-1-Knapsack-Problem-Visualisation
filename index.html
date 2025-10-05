@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0/1 Knapsack DP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <h1 class="h">0/1 Knapsack Problem using DP</h1>
+    </div>
+
+    <div id="inputs">
+        <h2 class="h">Inputs</h2>
+        <div id="capacity">
+            <label for="cap">Knapsack Capacity</label>
+            <input type="number" name="capacity" id="cap" min="0">
+        </div>
+
+        <div id="items">
+            <h2 class="h">Items</h2>
+            <div id="item-cont"></div>
+            <div id="btns">
+                <button id="addItemBtn" class="b">Add Item</button>
+                <button id="presetBtn" class="b">Load Preset</button>
+                <button id="bestCaseBtn" class="b">Best Case</button>
+                <button id="worstCaseBtn" class="b">Worst Case</button>
+                <button id="clearBtn" class="b">Clear All</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="exec-cont">
+        <h2 class="h">Execution</h2>
+        <button id="startExecBtn" class="b">Generate Table & Start</button> 
+        <div id="exec">
+            <div id="table">
+                <h2 class="h">Table</h2>
+                <div id="table-cont">
+                    <p>Pending Execution</p>
+                </div>
+            </div>
+            <div id="current-step">
+                <h2 class="h">Current Step</h2>
+                <div id="curr-step">Will display current step here</div>
+                <div id="nav-btns">
+                    <button id="prevStep" class="b" disabled>Previous</button>
+                    <button id="nextStep" class="b" disabled>Next</button>
+                    <button id="restart" class="b" disabled>Restart</button>
+                    <button id="pausePlay" class="b" disabled>Play</button>
+                </div>
+            </div>
+        </div>
+        <h2 class="h">All Steps</h2>
+        <div id="steps">
+            <p>Will display all steps here</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
